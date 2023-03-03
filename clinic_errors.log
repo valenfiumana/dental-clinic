@@ -1,0 +1,14 @@
+[2022-10-1411:09:15] [ ERROR] [GlobalExceptionHandler:16] The patient with id 4 does not exist
+[2022-10-1411:14:26] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 4 does not exist
+[2022-10-1411:14:31] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 3 does not exist
+[2022-10-1411:14:46] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 3 does not exist
+[2022-10-1411:15:12] [ ERROR] [GlobalExceptionHandler:16] The patient with id 3 does not exist
+[2022-10-1411:15:42] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 2 does not exist
+[2022-10-1411:15:46] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 2 does not exist
+[2022-10-1411:17:23] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 1 does not exist
+[2022-10-1411:18:10] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 1 does not exist
+[2022-10-1411:19:09] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 4 does not exist
+[2022-10-1411:19:16] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 2 does not exist
+[2022-10-1411:19:24] [ ERROR] [GlobalExceptionHandler:16] The dentist with id 2 does not exist
+[2022-10-1411:20:13] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 2 does not exist
+[2022-10-1411:20:34] [ ERROR] [GlobalExceptionHandler:16] The appointment with id 2 does not exist

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Hart Dental</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="/js/get_dentist.js"></script>
+    <script type="text/javascript" src="/js/update_dentist.js"></script>
+    <script type="text/javascript" src="/js/delete_dentist.js"></script>
+    <link href="./css/dentistList.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf8631ba4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="topbar" class="d-flex align-items-center justify-content-center fixed-top mb-3 pt-2"><p class="">We are open for all dental procedures and are working safely. Call or text our office at (913) 491-6663 to learn more about our updated office protocols.</p></div>
+    <header>
+        <!-- NAV BAR-->
+        <nav class="navbar navbar-expand-lg bg-light mt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">H A R T | D E N T A L </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dentists
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/dentistList.html">All Dentists</a></li>
+                                <li><a class="dropdown-item" href="/dentistPost.html">Add Dentist</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Patients
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/patientList.html">All Patients</a></li>
+                                <li><a class="dropdown-item" href="/patientPost.html">Add Patient</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bookings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/appointmentList.html">All Appointments</a></li>
+                                <li><a class="dropdown-item" href="/appointmentPost.html">Make An Appointment</a></li>
+                            </ul>
+                        </li>
+                        <button class="btn navbar-btn me-3 appointment-btn">Make An Appointment</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="div_dentist_table">
+        <h1>Dentists</h1>
+        <div class="row col-md-6 table-responsive">
+            <table id="dentistTable" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Last Name</th>
+                    <th>Name</th>
+                    <th>Licensure</th>
+                </tr>
+                </thead>
+                <tbody id="dentistTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6" style="display: none;
+                                                background-color:#e6fffa; padding:10px; border-radius:3px"
+             id="div_dentist_updating">
+            <form id="update_dentist_form">
+                <div class="form-group">
+                    <label >Id:</label>
+                    <input type="text" class="form-control" id="dentist_id" readonly>
+                </div>
+                <div class="form-group">
+                    <label >Last Name:</label>
+                    <input type="text" class="form-control" placeholder="lastname" id="lastname">
+                </div>
+                <div class="form-group">
+                    <label >Name:</label>
+                    <input type="text" class="form-control" placeholder="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label >Licensure:</label>
+                    <input type="text" class="form-control" placeholder="licensure" id="licensure">
+                </div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </form>
+            <div id="response" style="display:none; margin:10px">
+            </div>
+        </div>
+    </div>
+<hr>
+    <!-- OFFICE -->
+    <section id="office" class="mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../img/dentist-office.jpg" alt="">
+            </div>
+            <div class="col-md-4 info">
+                <h7>Our office</h7>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-mobile pe-3"></i>
+                    <span>Call of Text (913) 491-6663</span>
+                </div>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-location-dot pe-3"></i>
+                    <span>Brooklyn, NY 11233, United States</span>
+                </div>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-clock pe-3"></i>
+                    <div>
+                        <p>M–W, 8:00AM–5:00PM</p>
+                        <p>TH–F, 7:00AM–3:30PM</p>
+                        <p>Weekends, Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.9352618939415!2d-73.91306808522847!3d40.675395347792104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c5d35bcbebd%3A0x857b585e54c259f6!2sDental%20Clinic!5e0!3m2!1sen!2sar!4v1665251797344!5m2!1sen!2sar" width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER-->
+    <footer>
+        <div class="container mt-5">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a class="navbar-brand" href="#">H A R T | D E N T A L </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>You’ll feel right at home in our convenient Overland Park family dentist office thanks to our focus on your comfort, health, and happiness.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading mt-3">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Dentists</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">New Patients</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Offices</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Review Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+    ></script>
+</body>
+</html>
