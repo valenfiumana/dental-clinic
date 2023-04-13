@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Hart Dental</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="/js/post_dentists.js"></script>
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf8631ba4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="topbar" class="d-flex align-items-center justify-content-center fixed-top mb-3 pt-2"><p class="">We are open for all dental procedures and are working safely. Call or text our office at (913) 491-6663 to learn more about our updated office protocols.</p></div>
+<header>
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg bg-light mt-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">H A R T | D E N T A L </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dentists
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/odontologosList.html">All Dentists</a></li>
+                            <li><a class="dropdown-item" href="/odontologoAlta.html">Add Dentist</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Patients
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pacienteList.html">All Patients</a></li>
+                            <li><a class="dropdown-item" href="/pacienteAlta.html">Add Patient</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bookings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/turnoList.html">All Appointments</a></li>
+                            <li><a class="dropdown-item" href="/turnoAlta.html">Make An Appointment</a></li>
+                        </ul>
+                    </li>
+                    <button class="btn navbar-btn me-3 appointment-btn">Make An Appointment</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="row">
+            <div class="col-md-5 pictures">
+                <img src="img/dentist.jpg" alt="" class="dentist-pic">
+                <img src="img/smile.jpg" alt="" class="smile-pic">
+            </div>
+            <div class="col-md-7 text">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-white text-center mt-5">
+                        <h2 class="mb-3 mt-4">Every great smile begins with a great dentist</h2>
+                        <a class="btn btn-outline btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                           role="button" rel="nofollow" target="_blank">Book Online</a>
+                        <a class="btn btn-colored btn-lg m-2" href="https://mdbootstrap.com/docs/standard/"
+                           target="_blank" role="button">Call 5524161</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container presentation">
+            <div class="row mt-5">
+                <div class="col-md-8 about-text">
+                    <h3>Dr. Hart’s Dental Philosophy</h3>
+                    <p class="quote">“Helping patients achieve dental health and beautiful smiles is a privilege and responsibility.
+                        For over 20 years, my team and I have proudly provided the best dental experience in the Rogue Valley. Our comfort-first approach is designed to meet the needs of you and your entire family.”
+                    </p>
+                    <p class="description"> At our dentist office in Medford, our philosophy of care is defined by our personalized service and advanced, high-tech treatments.
+                        We approach every patient with the same level of gentle, thorough care and attention we would give a member of our own family – and it shows!
+                        You’ll love the warm and friendly staff and relaxing office environment.</p>
+                </div>
+                <div class="col-md-4 ">
+                    <img class="img-fluid" src="img/dr-hart.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="row">
+            <div class="col-md-4 service">
+                <h7>General</h7>
+                <p>Restore your teeth to their natural beauty with minimally-invasive treatments from Dr. Catt. Fillings, crowns, root canal therapy, and many more.</p>
+                <a class="btn btn-outline btn-lg m-2" href="#"
+                   role="button" rel="nofollow" target="_blank">Learn More</a>
+            </div>
+            <div class="col-md-4 service">
+                <h7>Cosmetic</h7>
+                <p>Families throughout the Rogue Valley trust Dr. Catt to help them achieve the perfect smile. We offer cosmetic dental services like tooth-colored fillings, veneers, and more.</p>
+                <a class="btn btn-outline btn-lg m-2" href="#"
+                   role="button" rel="nofollow" target="_blank">Learn More</a>
+            </div>
+            <div class="col-md-4 service">
+                <h7>Preventive</h7>
+                <p>Your annual exam keeps your teeth and gums healthy. Our gentle and high-tech treatments remove tartar and bacteria, lowering your risk of cavities and gum disease.</p>
+                <a class="btn btn-outline btn-lg m-2" href="#"
+                   role="button" rel="nofollow" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- INSURANCE -->
+    <section id="insurance">
+        <div class="row">
+            <div class="col-md-4 title">
+                <h4>Investing in your dental health</h4>
+                <img src="../img/insurance-family.jpg" alt="">
+            </div>
+            <div class="col-md-7 text">
+                <p>Have dental insurance? Awesome! We accept most insurance plans and can help you file all the paperwork.</p>
+                <p class="no-insurance">No dental insurance? No problem! Ask about our in-office membership plan and STAR Personal & Caring.</p>
+                <img src="../img/insurance-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONY -->
+    <section id="testimony">
+        <div class="row">
+            <div class="col-md-5 title">
+                <p>Become a patient for life</p>
+            </div>
+            <div class="col-md-7 quote">
+                <i class="fa-solid fa-quote-right mb-3"></i>
+                <p>“If you’re afraid or anxious and you don’t want to go to the dentist, call Dr. Catt. He will ease that fear right away.”</p>
+                <a class="btn btn-outline btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                   role="button" rel="nofollow" target="_blank">Book Online</a>
+            </div>
+        </div>
+    </section>
+    <!-- OFFICE -->
+    <section id="office" class="mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../img/dentist-office.jpg" alt="">
+            </div>
+            <div class="col-md-4 info">
+                <h7>Our office</h7>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-mobile pe-3"></i>
+                    <span>Call of Text (913) 491-6663</span>
+                </div>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-location-dot pe-3"></i>
+                    <span>Brooklyn, NY 11233, United States</span>
+                </div>
+                <div class="d-flex flex-row">
+                    <i class="fa-solid fa-clock pe-3"></i>
+                    <div>
+                        <p>M–W, 8:00AM–5:00PM</p>
+                        <p>TH–F, 7:00AM–3:30PM</p>
+                        <p>Weekends, Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.9352618939415!2d-73.91306808522847!3d40.675395347792104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c5d35bcbebd%3A0x857b585e54c259f6!2sDental%20Clinic!5e0!3m2!1sen!2sar!4v1665251797344!5m2!1sen!2sar" width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- FOOTER-->
+<footer>
+    <div class="container mt-5">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="navbar-brand" href="#">H A R T | D E N T A L </a>
+                        </div>
+                        <div class="footer-text">
+                            <p>You’ll feel right at home in our convenient Overland Park family dentist office thanks to our focus on your comfort, health, and happiness.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading mt-3">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dentists</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">New Patients</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Offices</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Review Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[2022-09-2210:18:07] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 3 no existe
+[2022-09-2210:18:35] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2313:53:58] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2314:38:54] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 2 no existe
+[2022-09-2316:35:52] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2316:58:28] [ ERROR] [GlobalExceptionHandler:15] El turno con id 2 no existe
+[2022-09-2317:03:22] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2423:32:12] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2423:33:00] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 1 no existe
+[2022-09-2423:33:28] [ ERROR] [GlobalExceptionHandler:15] No existe paciente con id 1
+[2022-09-2510:53:13] [ ERROR] [GlobalExceptionHandler:15] El odontologo con id 2 no existe
