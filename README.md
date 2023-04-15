@@ -1,6 +1,7 @@
 # Dental Clinic Website
 This is a dental clinic website project built using Java, HTML, CSS, and JavaScript. It offers a comprehensive system for managing dentists, patients, and appointments with features for secure login and authentication, CRUD operations, intuitive user interface, robust database management, flexible appointment scheduling, and an easy-to-use admin panel.
 
+![website](dental_clinic.gif)
 ## Features
 * **Login and Authentication**: Provides a secure login and authentication system to protect data privacy.
 * **CRUD Operations**: Allows for easy management of dentists, patients, and appointments with Create, Read, Update, and Delete operations.
